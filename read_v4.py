@@ -8,7 +8,7 @@ def read_file(file_path):
     with open(file_path, 'r') as file:
         lines = file.readlines()
 
-    # Split lines longer than MAX_CHARS_PER_LINE characters without splitting words (assumes no word is longer than 15 chars)
+    # Split lines longer than MAX_CHARS_PER_LINE characters without splitting words
     split_lines = []
     for line in lines:
         words = line.split(' ')
